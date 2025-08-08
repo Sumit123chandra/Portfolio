@@ -3,12 +3,13 @@ import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
 import { Typewriter } from "react-simple-typewriter";
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGithub } from "react-icons/fa";
-import { SiMongodb, SiTailwindcss } from "react-icons/si";
+import { SiMongodb, SiTailwindcss, SiNextdotjs } from "react-icons/si";
 import portfolioimg from "./assets/portfolioimg.jpg";
 import blogsiteImg from "./assets/projects/blogsite.png";
 import ecommerceImg from "./assets/projects/ecommerce.png";
 import taskManagerImg from "./assets/projects/taskmanager.png";
 import newsImg from "./assets/projects/news.png";
+import resuMindImg from "./assets/projects/resumind.png"
 import {FaLinkedin, FaTwitter } from "react-icons/fa";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -315,9 +316,10 @@ export default function App() {
         { name: "CSS", icon: <FaCss3Alt className="text-blue-500" /> },
         { name: "JavaScript", icon: <FaJs className="text-yellow-400" /> },
         { name: "React", icon: <FaReact className="text-blue-400" /> },
+        { name: "Tailwind", icon: <SiTailwindcss className="text-sky-400" /> },
+        { name: "Next.js", icon: <SiNextdotjs className="text-sky-400" /> },
         { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
         { name: "MongoDB", icon: <SiMongodb className="text-green-400" /> },
-        { name: "Tailwind", icon: <SiTailwindcss className="text-sky-400" /> },
         { name: "GitHub", icon: <FaGithub className="text-gray-300" /> },
         { name: "MySQL", icon: <SiMysql className="text-blue-600" /> },   // ✅ Added SQL
         { name: "C++", icon: <SiCplusplus className="text-indigo-500" /> }, // ✅ Added C++
@@ -375,7 +377,7 @@ export default function App() {
             desc: "A fully functional blog platform with authentication and CRUD features.",
             tech: ["React", "Node.js", "MongoDB","Express.js","JWT"],
             github: "https://github.com/Sumit123chandra/BlogSite",
-            live: "https://blogssitesum.netlify.app/"
+            live: "https://blog-site-silk-nine.vercel.app/"
           },
           {
             title: "E-Commerce App",
@@ -400,7 +402,16 @@ export default function App() {
             tech: ["React", "Node.js", "Firebase"],
             github: "https://github.com/Sumit123chandra/Cantilever-News_platform",
             live: "https://github.com/Sumit123chandra/Cantilever-News_platform"
+          },
+          {
+            title: "ResuMind: AI-Powered Resume Analyzer",
+            img: resuMindImg,
+            desc: "A modern web application that helps job seekers optimize their resumes by providing an instant match score against any job description. It uses AI to give actionable feedback, including missing keywords and personalized suggestions.",
+            tech: ["Next.js", "React", "Python", "Flask", "Gemini API", "Cloudinary"],
+            github: "https://github.com/Sumit123chandra/ResumeAnalyser.git",
+            live: "https://resume-analyser-henna.vercel.app/"
           }
+
         ].map((project, index) => (
           <motion.div
             key={index}
