@@ -375,7 +375,7 @@ export default function App() {
             title: "BlogSite",
             img: blogsiteImg,
             desc: "A fully functional blog platform with authentication and CRUD features.",
-            tech: ["React", "Node.js", "MongoDB","Express.js","JWT"],
+            tech: ["React", "Next.js", "Node.js", "MongoDB","Express.js","JWT"],
             github: "https://github.com/Sumit123chandra/BlogSite",
             live: "https://blog-site-silk-nine.vercel.app/"
           },
@@ -391,7 +391,7 @@ export default function App() {
             title: "Task Manager",
             img: taskManagerImg,
             desc: "A task management app with sorting, filtering, and JWT auth.",
-            tech: ["React", "Node.js", "MongoDB","JWT"],
+            tech: ["React", "Node.js", "Express.js", "MongoDB","JWT"],
             github: "https://github.com/Sumit123chandra/TaskManager",
             live: "https://tasktodourgently.netlify.app/"
           },
